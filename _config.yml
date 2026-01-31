@@ -58,4 +58,4 @@ collections:
     output: true
 
 # Theme (replace with any remote theme if desired)
-theme: jekyll-theme-minimal
+theme: thundergolfer/junior-theme
