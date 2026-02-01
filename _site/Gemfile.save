@@ -1,0 +1,49 @@
+r 17ekeller.github.io % bundle exec jekyll serve
+/Users/erickeller/.gem/ruby/3.2.2/gems/jekyll-3.9.3/lib/jekyll/log_adapter.rb:43: warning: Logger not initialized properly
+/Users/erickeller/.gem/ruby/3.2.2/gems/jekyll-3.9.3/lib/jekyll/stevenson.rb:5: info: Jekyll::Stevenson#initialize: does not call super probably
+Configuration file: /Users/erickeller/Desktop/web_dev/17ekeller.github.io/_config.yml
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+            Source: /Users/erickeller/Desktop/web_dev/17ekeller.github.io
+       Destination: /Users/erickeller/Desktop/web_dev/17ekeller.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+        Pagination: Pagination is enabled, but I couldn't find an index.html page to use as the pagination template. Skipping pagination.
+                    done in 0.76 seconds.
+ Auto-regeneration: enabled for '/Users/erickeller/Desktop/web_dev/17ekeller.github.io'
+bundler: failed to load command: jekyll (/Users/erickeller/.gem/ruby/3.2.2/bin/jekyll)
+<internal:/Users/erickeller/.rubies/ruby-3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require': cannot load such file -- webrick (LoadError)
+	from <internal:/Users/erickeller/.rubies/ruby-3.2.2/lib/ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:37:in `require'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/jekyll-3.9.3/lib/jekyll/commands/serve/servlet.rb:3:in `<top (required)>'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/jekyll-3.9.3/lib/jekyll/commands/serve.rb:184:in `require_relative'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/jekyll-3.9.3/lib/jekyll/commands/serve.rb:184:in `setup'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/jekyll-3.9.3/lib/jekyll/commands/serve.rb:102:in `process'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/jekyll-3.9.3/lib/jekyll/commands/serve.rb:93:in `block in start'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/jekyll-3.9.3/lib/jekyll/commands/serve.rb:93:in `each'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/jekyll-3.9.3/lib/jekyll/commands/serve.rb:93:in `start'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/jekyll-3.9.3/lib/jekyll/commands/serve.rb:75:in `block (2 levels) in init_with_program'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/mercenary-0.3.6/lib/mercenary/command.rb:220:in `block in execute'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/mercenary-0.3.6/lib/mercenary/command.rb:220:in `each'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/mercenary-0.3.6/lib/mercenary/command.rb:220:in `execute'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/mercenary-0.3.6/lib/mercenary/program.rb:42:in `go'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/mercenary-0.3.6/lib/mercenary.rb:19:in `program'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/jekyll-3.9.3/exe/jekyll:15:in `<top (required)>'
+	from /Users/erickeller/.gem/ruby/3.2.2/bin/jekyll:25:in `load'
+	from /Users/erickeller/.gem/ruby/3.2.2/bin/jekyll:25:in `<top (required)>'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/lib/bundler/cli/exec.rb:61:in `load'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/lib/bundler/cli/exec.rb:61:in `kernel_load'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/lib/bundler/cli/exec.rb:24:in `run'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/lib/bundler/cli.rb:500:in `exec'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/lib/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/lib/bundler/vendor/thor/lib/thor.rb:538:in `dispatch'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/lib/bundler/cli.rb:35:in `dispatch'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/lib/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/lib/bundler/cli.rb:29:in `start'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/exe/bundle:28:in `block in <top (required)>'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/lib/bundler/friendly_errors.rb:118:in `with_friendly_errors'
+	from /Users/erickeller/.gem/ruby/3.2.2/gems/bundler-4.0.5/exe/bundle:20:in `<top (required)>'
+	from /Users/erickeller/.gem/ruby/3.2.2/bin/bundle:25:in `load'
+	from /Users/erickeller/.gem/ruby/3.2.2/bin/bundle:25:in `<main>'source "https://rubygems.org"
+
+gem "github-pages", "~> 228", group: :jekyll_plugins
+gem "webrick"
