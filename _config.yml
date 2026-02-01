@@ -56,6 +56,3 @@ collections_dir: collections
 collections:
   projects:
     output: true
-
-# Theme (replace with any remote theme if desired)
-theme: thundergolfer/junior-theme
