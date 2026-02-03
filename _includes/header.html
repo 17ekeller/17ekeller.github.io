@@ -1,64 +1,110 @@
 <header class="center">
   <div class="desktop-header">
 
-    <div class="header-each">
-      <h5>
+    <!-- Brand -->
+    <div class="header-brand">
+      <span class="brand-text"><b>Eric Keller</b><br><em>BI & Analytics Engineer</em></span>
+    </div>
+
+    <!-- Navigation -->
+    <div class="header-nav">
+      <div class="header-each">
         <a href="{{ '/' | relative_url }}"
            class="{% if page.url == '/' %}active{% endif %}">
           <span>Home</span>
         </a>
-      </h5>
-    </div>
+      </div>
 
-    <div class="header-each">
-      <h5>
+      <div class="header-each">
         <a href="{{ '/projects/projects_home/' | relative_url }}"
-           class="{% if page.url contains '/projects/feature-adoption' %}active{% endif %}">
+           class="{% if page.url contains '/projects/' %}active{% endif %}">
           <span>Projects</span>
         </a>
-      </h5>
-    </div>
+      </div>
 
-    <div class="header-each">
-      <h5>
+      <div class="header-each">
+        <a href="{{ '/analytics-architecture/' | relative_url }}"
+           class="{% if page.url == '/analytics-architecture/' %}active{% endif %}">
+          <span>Applied Analytics Architecture</span>
+        </a>
+      </div>
+
+      <div class="header-each">
         <a href="{{ '/projects/experiment-analysis/' | relative_url }}"
-           class="{% if page.url contains '/projects/experiment-analysis' %}active{% endif %}">
-          <span>Experiments</span>
+           class="{% if page.url contains '/projects/experiment-analysis/' %}active{% endif %}">
+          <span>About Me</span>
         </a>
-      </h5>
-    </div>
-
-    <div class="header-each">
-      <h5>
-        <a href="{{ '/projects/analytics-architecture/' | relative_url }}"
-           class="{% if page.url contains '/projects/analytics-architecture' %}active{% endif %}">
-          <span>Architecture</span>
-        </a>
-      </h5>
+      </div>
     </div>
 
   </div>
 </header>
 
+<style>
 
-<style>/* ===== HEADER FLEX LAYOUT ===== */
+  html, body {
+  margin: 0;
+  padding: 0;
+}
 
+/* ===== HEADER ===== */
+header {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+/* ===== DESKTOP HEADER ===== */
 header .desktop-header {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    max-width: 155em;
-    margin: 30px auto;
-    padding: 0 5%;
+  max-width: 155em;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-header .desktop-header .header-each {
-    text-align: center;
+/* ===== BRAND FIXED FULL LEFT ===== */
+header .header-brand {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;          /* covers full viewport width including scrollbars */
+  padding: 10px 0px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  z-index: 999;
+  font-size: 0.85em;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: left;
+  white-space: normal;
+  box-shadow: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box; /* ensures full coverage */
 }
 
-/* ===== LINK STYLE ===== */
 
+
+/* ===== FADE EFFECT PURE CSS ===== */
+/* The trick: reduce opacity when user scrolls using :not(:root) + scroll container */
+header:has(+ *:not(:root)) .header-brand {
+  opacity: 0.90;
+  transform: scale(0.97);
+}
+
+/* ===== NAVIGATION ===== */
+header .header-nav {
+  margin-top: 100px; /* space below fixed brand */
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+
+/* ===== NAV LINKS ===== */
 header .header-each a {
   text-decoration: none;
   background-image: none;
@@ -67,29 +113,28 @@ header .header-each a {
   position: relative;
 }
 
-/* ===== UNDERLINE ANIMATION — same as footer ===== */
-
-header .header-each span:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-bottom: 2px solid #000;
-    transition: .4s;
-    transform: scaleX(1);
-}
-
-header .header-each a:hover span:before {
-    transform: scaleX(0);
-}
-
-/* Bold current page in header */
 header .header-each a.active {
   font-weight: 700;
   letter-spacing: 0.02em;
   text-shadow: 0.3px 0 currentColor;
 }
 
+header .header-each a span::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #000;
+  transition: .4s;
+  transform: scaleX(1);
+}
 
+header .header-each a:hover span::before {
+  transform: scaleX(0);
+}
+
+header .brand-text {
+  display: inline-block;
+}
 </style>

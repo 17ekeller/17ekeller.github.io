@@ -16,12 +16,11 @@ title: Eric Keller - Analytics Engineer
 
 ### I'm a product minded Analytics Engineer with a focus on desiging scalable ETL, data models and making decision intelligence reliable and accessible. 
 
-### Currently, I'm building analytics frameworks and systems for consumer facing software products at <a href="https://www.motorola.com/us/en/homepage" target="_blank" rel="noopener noreferrer">Motorola Mobility</a>.
+### Currently, I'm building production analytics frameworks and systems for consumer facing software products at <a href="https://www.motorola.com/us/en/homepage" target="_blank" rel="noopener noreferrer">Motorola Mobility</a>. 
 
-## **Selected Project Work:**
-### - [Feature Adoption Metrics](projects/feature-adoption)
-### - [Experiment Evaluation](projects/experiment-analysis)
-### - [Analytics Engineering Architecture](projects/analytics-architecture)
+### Additionally, I have experience designing and automating cloud native business intelligence data solutions.
+
+### Check out some of my [selected project work](/projects/projects_home) and feel free to explore my [analytics architecture]({{ '/analytics-architecture' | relative_url }}) methodology, design principles and rationale.
 
 ## **Core Competencies**
-### SQL • Python • dbt style modeling • Product analytics • Dashboarding • Google Cloud - BigQuery, Cloud Run, Pub/Sub
+#### SQL • Python • dbt style modeling • Product analytics • Dashboarding • Google Cloud - BigQuery, Cloud Run, Pub/Sub
