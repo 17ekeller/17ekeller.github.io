@@ -41,11 +41,11 @@ title: Eric Keller - Analytics Engineer
 /* Mobile */
 @media (max-width: 640px) {
   .hero-intro {
-    gap: 20px;
+    gap: 40px;
   }
 
   .hero-photo {
-    width: 160px;
+    width: 100px;
   }
 }
 </style>

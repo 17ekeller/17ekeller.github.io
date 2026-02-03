@@ -16,9 +16,6 @@
     <div class="footer-each">
       <h5><a href="https://www.linkedin.com/in/eric-keller-b7303418b/" target="_blank" alt="LinkedIn"><span>LinkedIn</span></a></h5>
     </div>
-    <div class="footer-each">
-      <h5><a href="https://github.com/17ekeller" target="_blank" alt="Github"><span>Github</span></a></h5>
-    </div>
   </div>
 </footer>
 
@@ -107,6 +104,28 @@ footer .footer-each a:active, footer .footer-each a:hover {
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
 }
+/* ===== Mobile Footer — compact wrapped layout ===== */
+@media (max-width: 640px) {
+
+  footer .desktop-footer {
+    justify-content: center;   /* center instead of space-between */
+    gap: 14px 22px;            /* row gap + column gap */
+    padding: 0 6%;
+  }
+
+  footer .desktop-footer .footer-each {
+    width: auto;               /* let flex size naturally */
+    flex: 0 1 auto;
+  }
+
+  footer .desktop-footer h5 {
+    margin: 6px 0;
+    font-size: 15px;
+  }
+
+}
+
+
 
 </style>
 
@@ -116,3 +135,4 @@ footer .footer-each a:active, footer .footer-each a:hover {
     anchors.options.visible = 'always';
     anchors.add('article h2, article h3, article h5, article h5, article h6');
 </script>{% endif %}
+
