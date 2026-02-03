@@ -1,7 +1,7 @@
 ---
 title: Feature Adoption Metrics
 layout: default
-permalink: /projects/feature-adoption/
+
 ---
 
 # Feature Adoption Metrics

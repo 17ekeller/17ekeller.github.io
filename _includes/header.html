@@ -1,32 +1,95 @@
-<header class="site-header px-responsive">
-  <div class="mt2 wrap">
-      <nav class="">
-        {% include navigation.html %}
-      </nav>
+<header class="center">
+  <div class="desktop-header">
+
+    <div class="header-each">
+      <h5>
+        <a href="{{ '/' | relative_url }}"
+           class="{% if page.url == '/' %}active{% endif %}">
+          <span>Home</span>
+        </a>
+      </h5>
+    </div>
+
+    <div class="header-each">
+      <h5>
+        <a href="{{ '/projects/projects_home/' | relative_url }}"
+           class="{% if page.url contains '/projects/feature-adoption' %}active{% endif %}">
+          <span>Projects</span>
+        </a>
+      </h5>
+    </div>
+
+    <div class="header-each">
+      <h5>
+        <a href="{{ '/projects/experiment-analysis/' | relative_url }}"
+           class="{% if page.url contains '/projects/experiment-analysis' %}active{% endif %}">
+          <span>Experiments</span>
+        </a>
+      </h5>
+    </div>
+
+    <div class="header-each">
+      <h5>
+        <a href="{{ '/projects/analytics-architecture/' | relative_url }}"
+           class="{% if page.url contains '/projects/analytics-architecture' %}active{% endif %}">
+          <span>Architecture</span>
+        </a>
+      </h5>
+    </div>
+
   </div>
 </header>
 
-<div class="menu-btn">
-  <span class="menu-line"></span>
-  <span class="menu-line"></span>
-  <span class="menu-text">Menu</span>
-</div>
 
-<div class="home-btn" onclick="window.location.href = '/'">
-  <span class="static-menu-line"></span>
-  <span class="home-text">Home</span>
-</div>
+<style>/* ===== HEADER FLEX LAYOUT ===== */
 
-<script>
-$( ".menu-btn" ).click(function() {
-    if (  $( ".menu-text" ).css( "opacity" ) == "0" ){
-        $(".menu-line:nth-of-type(2)").css("transform","rotate(135deg)");
-        $(".menu-text").css("opacity", "1");
-        $( "#main-menu" ).css("transform", "translate(0%, -116%) matrix(1, 0, 0, 1, 0, 0)");
-    } else {
-        $(".menu-line:nth-of-type(2)").css("transform","rotate(44deg)");
-        $(".menu-text").css("opacity", "0");
-        $( "#main-menu" ).css("transform", "matrix(1, 0, 0, 1, 0, 0)");
-    }
-});
-</script>
+header .desktop-header {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 155em;
+    margin: 30px auto;
+    padding: 0 5%;
+}
+
+header .desktop-header .header-each {
+    text-align: center;
+}
+
+/* ===== LINK STYLE ===== */
+
+header .header-each a {
+  text-decoration: none;
+  background-image: none;
+  color: #000;
+  font-weight: 300;
+  position: relative;
+}
+
+/* ===== UNDERLINE ANIMATION — same as footer ===== */
+
+header .header-each span:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    transition: .4s;
+    transform: scaleX(1);
+}
+
+header .header-each a:hover span:before {
+    transform: scaleX(0);
+}
+
+/* Bold current page in header */
+header .header-each a.active {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-shadow: 0.3px 0 currentColor;
+}
+
+
+</style>

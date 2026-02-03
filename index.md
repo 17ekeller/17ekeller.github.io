@@ -18,7 +18,7 @@ title: Eric Keller - Analytics Engineer
 
 ### Currently, I'm building analytics frameworks and systems for consumer facing software products at <a href="https://www.motorola.com/us/en/homepage" target="_blank" rel="noopener noreferrer">Motorola Mobility</a>.
 
-## **Check out my Poject Portfolio**
+## **Selected Project Work:**
 ### - [Feature Adoption Metrics](projects/feature-adoption)
 ### - [Experiment Evaluation](projects/experiment-analysis)
 ### - [Analytics Engineering Architecture](projects/analytics-architecture)
