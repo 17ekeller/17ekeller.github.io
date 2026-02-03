@@ -2,7 +2,7 @@
 title: Eric Keller - Analytics Engineer
 ---
 
-<div style="display:flex; align-items:center; gap:75px; flex-wrap:wrap;">
+<div class="hero-intro">
 
   <h1 style="margin:0;">
     <b>Hey there,<br>I'm Eric.</b>
@@ -10,9 +10,10 @@ title: Eric Keller - Analytics Engineer
 
   <img src="{{ '/assets/images/eric_cat.jpeg' | relative_url }}"
        alt="Eric Keller"
-       style="width:200px; border-radius:12px;">
+       class="hero-photo">
 
 </div>
+
 
 ### I'm a product minded Analytics Engineer with a focus on desiging scalable ETL, data models and making decision intelligence reliable and accessible. 
 
@@ -24,3 +25,27 @@ title: Eric Keller - Analytics Engineer
 
 ## **Core Competencies**
 #### SQL • Python • dbt style modeling • Product analytics • Dashboarding • Google Cloud - BigQuery, Cloud Run, Pub/Sub
+
+<style>.hero-intro {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  flex-wrap: wrap;
+}
+
+.hero-photo {
+  width: 200px;
+  border-radius: 12px;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .hero-intro {
+    gap: 20px;
+  }
+
+  .hero-photo {
+    width: 160px;
+  }
+}
+</style>
