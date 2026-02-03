@@ -108,7 +108,7 @@ Reporting tables are the **stakeholder facing analytics layer**.
   - Encourages metric consistency and reuse, preventing schema or metric drift
   - Scales cleanly as new features and data sources are added
 
-This approach closely aligns with modern **medallion style architectures** and **aggregate fact modeling**, adapted specifically for high volume product telemetry and performance data.
+This approach closely aligns with modern <a href="https://www.databricks.com/glossary/medallion-architecture" target="_blank" rel="noopener noreferrer">medallion style architectures</a> and <a href="https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/aggregate-fact-table-cube/" target="_blank" rel="noopener noreferrer">medallion style architectures</a>, adapted specifically for high volume product telemetry and performance data.
 
 While this methodology was developed in a Google Cloud environment (BigQuery and Dataform), it is warehouse agnostic by design and translates cleanly to Snowflake with dbt, Databricks (Delta Lake), Amazon Redshift, Azure Synapse and other modern analytical platforms that support incremental processing and partition aware query optimization allowing for an equivalent to GCP style clustering.
 
