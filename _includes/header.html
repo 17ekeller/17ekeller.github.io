@@ -27,12 +27,6 @@
       </div>
 
       <div class="header-each">
-        <a href="{{ '/analytics-architecture/' | relative_url }}" class="{% if page.url == '/analytics-architecture/' %}active{% endif %}">
-          <span>Applied Analytics Architecture</span>
-        </a>
-      </div>
-
-      <div class="header-each">
         <a href="{{ '/aboutme/' | relative_url }}" class="{% if page.url contains '/aboutme/' %}active{% endif %}">
           <span>About Me</span>
         </a>
@@ -111,7 +105,7 @@ header .header-each a {
 header .header-each a.active {
   font-weight: 700;
   letter-spacing: 0.02em;
-  text-shadow: 0.3px 0 currentColor;
+  text-shadow: .50px 0 currentColor;
 }
 
 /* underline for nav links */
@@ -163,12 +157,12 @@ header .brand-text {
   }
 
    header .header-nav a {
-    font-size: 0.85em;  /* smaller font on mobile */
+    font-size: 1.25em;  /* smaller font on mobile */
   }
 
   /* Optional: reduce gap between links */
   header .header-nav {
-    gap: 10px 15px;     /* smaller horizontal spacing */
+    gap: 45px;     /* smaller horizontal spacing */
     flex-wrap: nowrap;   /* prevent wrapping */
     justify-content: center;
   }

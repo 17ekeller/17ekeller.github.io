@@ -5,11 +5,11 @@ layout: default
 
 # My Analytics Architecture Methodology
 
-This page outlines the analytics architecture methodology I use when working on **consumer facing software products**, particularly for **feature usage and performance telemetry**, but applicable to analytics systems across domains. 
+This page outlines the analytics architecture methodology I've designed for **consumer facing software products**, particularly for **feature usage and performance analytics**, but applicable to analytics systems across domains. 
 
-The design prioritizes **scalability, cost efficiency, and fast stakeholder access**.
+The design prioritizes **scalability, cost efficiency, and fast stakeholder access** to often complex and messy raw event data.
 
-At a high level, the architecture follows a **directed, acyclic, layered data pipeline** where each layer has a clearly defined responsibility and consumer.
+At a high level, the architecture follows a **directed, acyclic, layered data pipeline** where each layer has a clearly defined responsibility and downstream consumer.
 
 ---   
 
@@ -43,12 +43,13 @@ This layer stores **raw, high volume event data** directly from production syste
   - Partition expiry set to ~90 days
   - Clustered by commonly filtered columns
 
+**Responsibilities**
+  - This layer exists for **correctness and traceability**, not analytics consumption
+
 **Design Rationale**
   - Raw events are expensive to scan and rarely needed long term
   - Short retention minimizes storage costs, but allows for quick searching of specific, recent partitions
   - Avoid rebuilding or rescanning large sharded tables on every load, which is extremely inefficient and costly
-
-This layer exists for **correctness and traceability**, not analytics consumption.
 
 ---   
 
@@ -86,7 +87,7 @@ Reporting tables are the **stakeholder facing analytics layer**.
   - Primary keys are typically date based and/or high level dimensions (e.g. device type)
   - “All time” view with no partition expiry
   - Typically under 50GB, often **significantly** smaller
-  - Optional clustering for dashboard filter performance; under 64MB its unneeded
+  - Optional clustering for dashboard filter performance; a `rpt` table under 64MB clustering for performance is negliglble
 
 **Responsibilities**
   - Serve dashboards, reports, and recurring analyses
@@ -108,15 +109,15 @@ Reporting tables are the **stakeholder facing analytics layer**.
   - Encourages metric consistency and reuse, preventing schema or metric drift
   - Scales cleanly as new features and data sources are added
 
-This approach closely aligns with modern <a href="https://www.databricks.com/glossary/medallion-architecture" target="_blank" rel="noopener noreferrer">medallion style architectures</a> and <a href="https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/aggregate-fact-table-cube/" target="_blank" rel="noopener noreferrer">medallion style architectures</a>, adapted specifically for high volume product telemetry and performance data.
+This approach closely aligns with modern <a href="https://www.databricks.com/glossary/medallion-architecture" target="_blank" rel="noopener noreferrer">medallion style architectures</a> and <a href="https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/aggregate-fact-table-cube/" target="_blank" rel="noopener noreferrer">aggregate fact tables</a>, adapted specifically for high volume product telemetry and performance data.
 
-While this methodology was developed in a Google Cloud environment (BigQuery and Dataform), it is warehouse agnostic by design and translates cleanly to Snowflake with dbt, Databricks (Delta Lake), Amazon Redshift, Azure Synapse and other modern analytical platforms that support incremental processing and partition aware query optimization allowing for an equivalent to GCP style clustering.
+While my methodology was developed in a Google Cloud environment (BigQuery and Dataform), it is warehouse agnostic by design and translates cleanly to Snowflake with dbt, Databricks (Delta Lake), Amazon Redshift, Azure Synapse and other modern analytical platforms that support incremental processing and partition aware query optimization.
 
 ---   
 
 ## Summary
 
-This methodology emphasizes:
+My methodology emphasizes:
   - Incremental processing over full rebuilds
   - Aggregates over repeated computation, especially at the stakeholder facing report level
   - Clear data contracts between layers

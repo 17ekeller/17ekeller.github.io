@@ -6,5 +6,5 @@ layout: default
 ## **Selected Professional Project Works**
 
 ### - [Feature Adoption Metrics]({{ '/projects/feature-adoption/' | relative_url }})
-### - [Experiment Evaluation](projects/experiment-analysis)
+### - [Analytics Engineering Architecture]({{ '/projects/analytics-architecture/' | relative_url }})
 ### - [Analytics Engineering Architecture](projects/analytics-architecture)

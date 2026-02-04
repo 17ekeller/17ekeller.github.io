@@ -21,7 +21,7 @@ title: Eric Keller - Analytics Engineer
 
 ### Additionally, I have experience designing and automating cloud native business intelligence data solutions, data analysis and light experimentation.
 
-### Check out some of my [selected project work](/projects/projects_home) and feel free to explore my [analytics architecture methodology,]({{ '/analytics-architecture' | relative_url }}) design principles and rationale.
+### Check out some of my [selected project work](/projects/projects_home) and feel free to explore my [analytics architecture methodology,]({{ '/projects/analytics-architecture' | relative_url }}) design principles and rationale.
 
 ## **Core Competencies**
 #### SQL • Python • dbt style modeling • Product analytics • Dashboarding • Google Cloud - BigQuery, Cloud Run, Pub/Sub
