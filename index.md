@@ -49,3 +49,4 @@ title: Eric Keller - Analytics Engineer
   }
 }
 </style>
+<link rel="icon" href="/assets/images/icons8-combo-chart-48" type="image/x-icon">
