@@ -120,7 +120,7 @@ While my methodology was developed in a Google Cloud environment (BigQuery and D
 My methodology emphasizes:
   - Incremental processing over full rebuilds
   - Aggregates over repeated computation, especially at the stakeholder facing report level
-  - Clear data contracts between layers
+  - Clear data contrasts between layers
   - Practical tradeoffs between data fidelity, cost, and usability
 
 The result is an analytics system that is **fast, predictable, testable and sustainable**, even as product usage and data volumes grow.
