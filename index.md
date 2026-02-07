@@ -8,7 +8,7 @@ title: Eric Keller - Analytics Engineer
     <b>Hey there,<br>I'm Eric.</b>
   </h1>
 
-  <img src="{{ '/assets/images/eric_cat.jpeg' | relative_url }}"
+  <img src="{{ '/assets/images/eric.jpeg' | relative_url }}"
        alt="Eric Keller"
        class="hero-photo">
 
