@@ -128,36 +128,44 @@ Dashboards are actively used by
 - Business developers to evaluate partnership value, performance and monetization effect
 - Leadership to monitor the high level metrics like adoption
 
-**Some examples of visuals the framework feeds:**
+**Some examples of visuals the framework feeds (click to enlarge):**
+<div style="display:flex; flex-wrap:wrap; margin:0; padding:0; gap:20px; justify-content:center;">
 
-<div style="display:flex; flex-wrap:wrap; margin:0; padding:0;">
+  <!-- Image 1 -->
+  <div style="text-align:center; flex:1 1 300px;">
+    <a href="{{ '/assets/images/dashboard3.png' | relative_url }}" target="_blank" style="margin:0; padding:0;">
+      <img src="{{ '/assets/images/dashboard3.png' | relative_url }}"
+           style="max-height:400px; width:auto; display:block; margin:0 auto;"
+           alt="Funnel Visual">
+    </a>
+    <div style="margin-top:6px; font-size:0.75rem; color:#555;">
+      User journey funnel visualization; powered by user funnel data model.
+    </div>
+  </div>
 
-  <a href="{{ '/assets/images/dashboard3.png' | relative_url }}"
-     target="_blank"
-     style="margin:0; padding:0;">
+  <!-- Image 2 -->
+  <div style="text-align:center; flex:1 1 300px;">
+    <a href="{{ '/assets/images/dashboard1.png' | relative_url }}" target="_blank" style="margin:0; padding:0;">
+      <img src="{{ '/assets/images/dashboard1.png' | relative_url }}"
+           style="max-height:400px; width:auto; display:block; margin:0 auto;"
+           alt="Section Metrics">
+    </a>
+    <div style="margin-top:6px; font-size:0.75rem; color:#555;">
+      Section metrics dashboard visual
+    </div>
+  </div>
 
-    <img src="{{ '/assets/images/dashboard3.png' | relative_url }}"
-         style="height:500px; width:auto; display:block; margin:0;"
-         alt="Funnel Visual">
-  </a>
-
-  <a href="{{ '/assets/images/dashboard1.png' | relative_url }}"
-     target="_blank"
-     style="margin:0; padding:0;">
-
-    <img src="{{ '/assets/images/dashboard1.png' | relative_url }}"
-         style="height:400px; width:auto; display:block; margin:0;"
-         alt="Section Metrics">
-  </a>
-
-  <a href="{{ '/assets/images/dashboard2.png' | relative_url }}"
-     target="_blank"
-     style="margin:0; padding:0;">
-
-    <img src="{{ '/assets/images/dashboard2.png' | relative_url }}"
-         style="height:400px; width:auto; display:block; margin:0;"
-         alt="Onboarding Visual">
-  </a>
+  <!-- Image 3 -->
+  <div style="text-align:center; flex:1 1 300px;">
+    <a href="{{ '/assets/images/dashboard2.png' | relative_url }}" target="_blank" style="margin:0; padding:0;">
+      <img src="{{ '/assets/images/dashboard2.png' | relative_url }}"
+           style="max-height:400px; width:auto; display:block; margin:0 auto;"
+           alt="Onboarding Visual">
+    </a>
+    <div style="margin-top:6px; font-size:0.75rem; color:#555;">
+      Detailed onboarding flow visual
+    </div>
+  </div>
 
 </div>
 
