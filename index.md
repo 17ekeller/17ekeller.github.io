@@ -24,7 +24,7 @@ title: Eric Keller - Analytics Engineer
 ### Check out some of my [selected project work](/projects/projects_home) and feel free to explore my [analytics architecture methodology,]({{ '/projects/analytics-architecture' | relative_url }}) design principles and rationale.
 
 ## **Core Competencies**
-#### SQL • Python • dbt style modeling • Product analytics • Dashboarding • Google Cloud - BigQuery, Cloud Run, Pub/Sub
+#### SQL • Python • dbt style modeling • Product analytics • Dashboarding • Google Cloud - BigQuery, Cloud Run, Pub/Sub • software and digital platform KPI design • user behavior • user journey and adoption • user event data • product requirements
 
 <style>.hero-intro {
   display: flex;
