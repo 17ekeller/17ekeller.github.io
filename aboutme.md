@@ -33,7 +33,7 @@ During highschool I was a part of the Future Business Leaders of America organiz
 
 In 2017, I chose to attend the University of Iowa (Go Hawkeyes!). My first year at Iowa I was part of the residency program, where I worked about 30 hours per week in order to gain residency status for tution purposes. I'm proud with the way I managed my time between doing that program and handling schoolwork to help offset the high cost of attending University. 
 
-Going into college I was on a business economics track. However, after realizing my true passion lies in computers and data, I switched majors my Sophomore year to Informatics - the study of computational information systems. Along the way I was part of a fraternity and held the year long leadership position of Recruitment Chairman with the responsibility to bring in new members. I graduated in 2022.
+Going into college I was on a business economics track. However, after realizing my true passion lies in computers and data, I switched majors my Sophomore year to <a href="https://catalog.registrar.uiowa.edu/liberal-arts-sciences/computer-science/informatics-ba/" target="_blank" rel="noopener noreferrer">Informatics - the study of computational information systems.</a>. Along the way I was part of a fraternity and held the year long leadership position of Recruitment Chairman with the responsibility to bring in new members. I graduated in 2022.
 
 ## As of Late
 
