@@ -5,6 +5,7 @@ description: "Product Analytics & Analytics Engineering Portfolio"
 baseurl: "" # leave blank for GitHub Pages
 url: "https://17ekeller.github.io"
 date_format: "%b %-d, %Y"
+google_analytics: G-QZFDNXQ634
 
 # Optional features
 show_related_posts: true
